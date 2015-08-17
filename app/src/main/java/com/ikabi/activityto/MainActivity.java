@@ -52,6 +52,10 @@ public void click1(View v){
     public void click5(View v){
         Intent intent = new Intent();
         intent.setAction("com.ikabi.se");
+//        intent.setData(Uri.parse("ikabi:我了个去爱咖比"));
+//        intent.setType("text/username");
+        intent.setDataAndType(Uri.parse("ikabi:zousj"), "text/username");
+        intent.addCategory(Intent.CATEGORY_DEFAULT);
         startActivity(intent);
     }
 }
